@@ -1,0 +1,1763 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Index</title>
+  </head>
+  <body>
+    <!-- The Top NAVBAR  -->
+    <nav class="topnavbar border-bottom d-none d-xl-block py-2">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <!-- The Left Side  -->
+        <div class="menu-topnavbar-left px-4">
+          <ul
+            class="nav-small d-flex align-items-center gap-4 list-unstyled mb-0"
+          >
+            <li class="pe-3 border-end">
+              <a
+                href="page-aboutus"
+                class="font-xs text-decoration-none textblue"
+                >About Us</a
+              >
+            </li>
+
+            <li class="pe-3 border-end">
+              <a
+                href="page-careers"
+                class="font-xs text-decoration-none textblue"
+                >Careers</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="page-register"
+                class="font-xs text-decoration-none textblue"
+                >Open A Shop</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- The center  -->
+
+        <div class="info-topnavbar text-center">
+          <span class="font-xs">Free shipping for all orders over </span>
+          <span class="fw-bold text-success"> $75.00</span>
+        </div>
+
+        <!-- The Right Side  -->
+
+        <div class="menu-topnavbar-right d-flex align-items-center gap-3">
+          <div class="d-flex align-items-center gap-1">
+            <span class="font-xs">Need Help? Call Us: </span>
+            <span class="fw-bold text-success">+ 1800 900</span>
+          </div>
+
+          <!-- The Languages Dropdown -->
+          <div class="dropdown">
+            <button
+              class="btn p-0 border-0 dropdown-toggle d-inline-flex align-items-center textblue"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="d-flex align-items-center gap-2 font-xs textblue">
+                <img src="./en.svg" alt="English" class="flag-icon" />English
+              </span>
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-item d-flex align-items-center gap-2 textblue active"
+                >
+                  <img
+                    src="./en.svg"
+                    alt="English"
+                    class="flag-icon"
+                  />English</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-item d-flex align-items-center gap-2 textblue"
+                >
+                  <img src="./fr.svg" alt="French" class="flag-icon" />
+                  Français</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-item d-flex align-items-center gap-2 textblue"
+                >
+                  <img
+                    src="./de.svg"
+                    alt="Deutsch"
+                    class="flag-icon"
+                  />Deutsch</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-item d-flex align-items-center gap-2 textblue"
+                >
+                  <img
+                    src="./es.svg"
+                    alt="Spanish"
+                    class="flag-icon"
+                  />Español</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- The Currency Dropdown  -->
+          <div class="dropdown">
+            <button
+              class="btn p-0 border-0 dropdown-toggle textblue"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="font-xs">USD</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a href="#" class="dropdown-item textblue active">USD</a></li>
+              <li><a href="#" class="dropdown-item textblue">EUR</a></li>
+              <li><a href="#" class="dropdown-item textblue">AUD</a></li>
+              <li><a href="#" class="dropdown-item textblue">SGP</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END TOPNAVBAR -->
+
+    <div class="layout d-lg-flex">
+      <!-- START LEFT SIDEBAR  -->
+      <aside
+        id="categorySidebar"
+        class="left-sidebar offcanvas-lg offcanvas-start"
+        tabindex="-1"
+        aria-labelledby="categorySidebarLabel"
+      >
+        <h5 id="categorySidebarLabel" class="visually-hidden">Categories</h5>
+
+        <!-- The Main box icon -->
+        <div class="sidebar-inner d-flex flex-column align-items-center">
+          <div
+            class="sidebar-main d-flex align-items-center justify-content-center"
+          >
+            <!--Main Icon -->
+            <!-- Open and Closed on lg + xl -->
+            <button
+              class="btn side-icon d-none d-lg-flex"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#categoryIcons"
+              aria-expanded="true"
+              aria-controls="categoryIcons"
+            >
+              <i class="bi bi-ui-radios-grid"></i>
+            </button>
+
+            <!-- closed button : md + sm -->
+
+            <button
+              type="button"
+              class="btn-close d-lg-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <!-- Category Icons -->
+
+          <div id="categoryIcons" class="collapse show">
+            <div class="d-flex flex-column align-items-center gap-4">
+              <!-- Desktops -->
+
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-desktop"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Computer Accessories</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Computer Cases</a
+                    >
+                  </li>
+                  <li><a href="#" class="dropdown-item textblue">Laptop</a></li>
+                  <li><a href="#" class="dropdown-item textblue">HDD</a></li>
+                  <li><a href="#" class="dropdown-item textblue">RAM</a></li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue">Headphones</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Mobile -->
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-mobile"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Phone Accessories</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue">Phone Cases</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Postpaid Phones</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Unlocked Phones</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Prepaid Phones</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue">Prepaid Plans</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Refurbished Phones</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue">Straight Talk</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue">IPhones</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Samsung Galaxy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Samsung Galaxy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Samsung Galaxy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Samsung Galaxy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Samsung Galaxy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Gaming -->
+
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-gamepad"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Wireless Routers</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Cool New Gadgets</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Tech and Gadgets</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Geek Gifts and Gadgets</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Xbox Accessories</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Playstation Accessories</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Watch -->
+
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-watch"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item textblue">Smart Watches</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Fashion Smart Watches</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Smart Bracelets</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Pocket Watches</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue">Smart Rings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue">Other Watches</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!--  Earbuds -->
+
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-earbuds"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >On-Ear Headphones</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >Earbuds &amp; In-Ear</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue">DJ Headphones</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >PC Accessories</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item textblue"
+                      >PC Game Headsets</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!--  Mouse -->
+
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-mouse-fill"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Logitech</a></li>
+                  <li><a href="#" class="dropdown-item">Redragon</a></li>
+                  <li><a href="#" class="dropdown-item">Amazon Basics</a></li>
+                  <li><a href="#" class="dropdown-item">Microsoft</a></li>
+                  <li><a href="#" class="dropdown-item">MageeGee</a></li>
+                </ul>
+              </div>
+
+              <!-- Headphones -->
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-headphones"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item">Car Audio System</a>
+                  </li>
+                  <li><a href="#" class="dropdown-item">Cellphones</a></li>
+                  <li><a href="#" class="dropdown-item">Desktops</a></li>
+                  <li><a href="#" class="dropdown-item">Gaming Consoles</a></li>
+                  <li><a href="#" class="dropdown-item">Telephones</a></li>
+                </ul>
+              </div>
+
+              <!-- Bluetooth -->
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-bluetooth"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item">Player Accessories</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Computer Accessories</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Speakers &amp; Audio</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Computer Networking</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Movies &amp; Films</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- icloud -->
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-cloud-download-fill"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Android</a></li>
+                  <li>
+                    <a href="#" class="dropdown-item">Linux &amp; Unix</a>
+                  </li>
+                  <li><a href="#" class="dropdown-item">Macintosh</a></li>
+                  <li><a href="#" class="dropdown-item">Windows</a></li>
+                  <li>
+                    <a href="#" class="dropdown-item">iPhones &amp; iOS</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- plug -->
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-plug-fill"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Antenna Toppers</a></li>
+                  <li>
+                    <a href="#" class="dropdown-item">Automative Body Armor </a>
+                  </li>
+                  <li><a href="#" class="dropdown-item">Power Inverter</a></li>
+                  <li><a href="#" class="dropdown-item">Gas Tank Doors</a></li>
+                  <li>
+                    <a href="#" class="dropdown-item"
+                      >Hood Scoops &amp; Vents</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- CPU -->
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-cpu-fill"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item"
+                      >Computer CPU Processors</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item"
+                      >Internal Fans &amp; Cooling
+                    </a>
+                  </li>
+                  <li><a href="#" class="dropdown-item">Graphic Cards</a></li>
+                  <li>
+                    <a href="#" class="dropdown-item">Network I/O Port Cards</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Internal Memory Card</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- PC display -->
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-pc-display"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Graphic PC</a></li>
+                  <li><a href="#" class="dropdown-item">Office PC </a></li>
+                  <li><a href="#" class="dropdown-item">Gaming PC</a></li>
+                  <li><a href="#" class="dropdown-item">Server</a></li>
+                </ul>
+              </div>
+
+              <!-- HDD -->
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-hdd-stack-fill"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Anker</a></li>
+                  <li><a href="#" class="dropdown-item">Pyle </a></li>
+                  <li><a href="#" class="dropdown-item">Bose </a></li>
+                  <li><a href="#" class="dropdown-item">Logitech</a></li>
+                </ul>
+              </div>
+
+              <!-- Ear Bud -->
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-music-player-fill"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Anker</a></li>
+                  <li><a href="#" class="dropdown-item">Pyle </a></li>
+                  <li><a href="#" class="dropdown-item">Bose </a></li>
+                  <li><a href="#" class="dropdown-item">Logitech</a></li>
+                </ul>
+              </div>
+
+              <!-- lamp -->
+              <div class="dropdown dropend side-dropdown">
+                <button
+                  class="btn side-icon"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-lamp-fill"></i>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Copyholders</a></li>
+                  <li>
+                    <a href="#" class="dropdown-item">Office Bookends </a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Business Card Holders </a>
+                  </li>
+                  <li><a href="#" class="dropdown-item">Lap Desks</a></li>
+                  <li><a href="#" class="dropdown-item">Mouse Pads</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Page Wrapper -->
+      <div class="page-wrapper">
+        <!-- The Main Navbar -->
+
+        <nav class="main-navbar navbar bg-white sticky-top py-2">
+          <div class="container-fluid px-3">
+            <div class="row w-100 align-items-center g-2">
+              <!-- LOGO  -->
+              <div
+                class="col-6 col-md-auto order-1 d-flex align-items-center gap-2"
+              >
+                <button
+                  class="btn side-icon d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#categorySidebar"
+                  aria-controls="categorySidebar"
+                  aria-label="Open categories"
+                >
+                  <i class="bi bi-ui-radios-grid"></i>
+                </button>
+
+                <a href="#" class="navbar-brand d-flex align-items-center mb-0">
+                  <img src="./logo.svg" alt="Logo" class="img-fluid" />
+                </a>
+              </div>
+
+              <!-- Search Area  -->
+
+              <div class="col-12 col-md order-3 order-md-2">
+                <div class="input-group search-box">
+                  <!-- All Categories -->
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      All Categories
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#" class="dropdown-item"> All Categories </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">
+                          Computer Accessories
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"> Cell Phones </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"> Gaming Gadgets </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"> Smart Watches </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"> Wired Headphones </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">
+                          Mouse &amp; Keyboards
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"> Headphones </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">
+                          Bluetooth Devices
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"> Cloud Software </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <input
+                    type="search"
+                    class="form-control"
+                    placeholder="Search for items "
+                  />
+                </div>
+              </div>
+
+              <!-- Desktop Menu XL only -->
+              <div class="col-lg-auto d-none d-lg-block order-md-3">
+                <ul class="navbar-nav flex-row align-items-center gap-3 mb-0">
+                  <!-- home -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle textblue px-1"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >Home
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">Home 1</a></li>
+                      <li><a href="#" class="dropdown-item">Home 2</a></li>
+                      <li><a href="#" class="dropdown-item">Home 3</a></li>
+                      <li><a href="#" class="dropdown-item">Home 4</a></li>
+                      <li><a href="#" class="dropdown-item">Home 5</a></li>
+                      <li><a href="#" class="dropdown-item">Home 6</a></li>
+                      <li><a href="#" class="dropdown-item">Home 7</a></li>
+                      <li><a href="#" class="dropdown-item">Home 8</a></li>
+                      <li><a href="#" class="dropdown-item">Home 9</a></li>
+                      <li><a href="#" class="dropdown-item">Home 10</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Shop -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle textblue px-1"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >Shop</a
+                    >
+
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">Shop Grid</a></li>
+                      <li><a href="#" class="dropdown-item">Shop Grid 2</a></li>
+                      <li><a href="#" class="dropdown-item">Shop List</a></li>
+                      <li><a href="#" class="dropdown-item">Shop List 2</a></li>
+                      <li>
+                        <a href="#" class="dropdown-item">Shop Fullwidth </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Single Product </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Single Product 2 </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Single Product 3 </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Single Product 4 </a>
+                      </li>
+                      <li><a href="#" class="dropdown-item">Shop Cart </a></li>
+                      <li>
+                        <a href="#" class="dropdown-item">Shop Checkout </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Shop Compare </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Shop Wishlist </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- vendors -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle textblue px-1"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >Vendors</a
+                    >
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#" class="dropdown-item">Vendor Listing</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Vendor Store</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Pages -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle textblue px-1"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >Pages</a
+                    >
+
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">About Us </a></li>
+                      <li><a href="#" class="dropdown-item">Contact Us</a></li>
+                      <li><a href="#" class="dropdown-item">Careers</a></li>
+                      <li>
+                        <a href="#" class="dropdown-item"
+                          >Terms &amp; Conditions</a
+                        >
+                      </li>
+                      <li><a href="#" class="dropdown-item">Register</a></li>
+                      <li><a href="#" class="dropdown-item">Login</a></li>
+                      <li><a href="#" class="dropdown-item">Error 404</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- BLOG  -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle textblue px-1"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >Blog</a
+                    >
+
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">Blog Grid</a></li>
+                      <li><a href="#" class="dropdown-item">Blog Grid 2</a></li>
+                      <li><a href="#" class="dropdown-item">Blog List</a></li>
+                      <li><a href="#" class="dropdown-item">Blog Big </a></li>
+                      <li>
+                        <a href="#" class="dropdown-item"
+                          >Blog Single - Left Sidebar</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"
+                          >Blog Single - Right Sidebar</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"
+                          >Blog Single - No Sidebar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- CONTACT -->
+                  <li class="nav-item">
+                    <a href="#" class="nav-link textblue px-1">Contact</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Right Icons  -->
+              <div class="col-6 col-md-auto order-2 order-md-4">
+                <div
+                  class="d-flex justify-content-end align-items-center gap-3"
+                >
+                  <!-- user -->
+                  <a href="#" class="textblue fs-6">
+                    <i class="fa-solid fa-user"></i>
+                  </a>
+
+                  <!-- Heart -->
+                  <a href="#" class="textblue fs-6 position-relative">
+                    <i class="fa-solid fa-heart"></i>
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-circle badge-orange px-1 py-0"
+                      >5</span
+                    >
+                  </a>
+
+                  <!--  Cart -->
+                  <a href="#" class="textblue fs-6 position-relative">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-circle badge-orange px-1 py-0"
+                      >2</span
+                    >
+                  </a>
+
+                  <!-- Refresh -->
+                  <a href="#" class="textblue fs-6">
+                    <i class="fa-solid fa-arrows-rotate"> </i>
+                  </a>
+
+                  <!-- The Burger Button / reveals at sm + md -->
+
+                  <button
+                    class="navbar-toggler d-lg-none border-0 p-1"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainMenu"
+                    aria-controls="mainMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </div>
+
+              <!--  The Burger Menu Content -->
+
+              <div class="collapse col-12 d-lg-none order-5" id="mainMenu">
+                <ul class="navbar-nav text-end gap-1 pt-2 border-top">
+                  <!-- HOME -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle textblue"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      data-bs-display="static"
+                      aria-expanded="false"
+                    >
+                      Home
+                    </a>
+
+                    <ul
+                      class="dropdown-menu position-static border-0 text-end textblue"
+                    >
+                      <li><a href="#" class="dropdown-item">Home 1</a></li>
+                      <li><a href="#" class="dropdown-item">Home 2</a></li>
+                      <li><a href="#" class="dropdown-item">Home 3</a></li>
+                      <li><a href="#" class="dropdown-item">Home 4</a></li>
+                      <li><a href="#" class="dropdown-item">Home 5</a></li>
+                      <li><a href="#" class="dropdown-item">Home 6</a></li>
+                      <li><a href="#" class="dropdown-item">Home 7</a></li>
+                      <li><a href="#" class="dropdown-item">Home 8</a></li>
+                      <li><a href="#" class="dropdown-item">Home 9</a></li>
+                      <li><a href="#" class="dropdown-item">Home 10</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- SHOP -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle textblue"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      data-bs-display="static"
+                      aria-expanded="false"
+                    >
+                      Shop
+                    </a>
+
+                    <ul
+                      class="dropdown-menu position-static border-0 text-end textblue"
+                    >
+                      <li><a href="#" class="dropdown-item">Shop Grid</a></li>
+                      <li><a href="#" class="dropdown-item">Shop Grid 2</a></li>
+                      <li><a href="#" class="dropdown-item">Shop List</a></li>
+                      <li><a href="#" class="dropdown-item">Shop List 2</a></li>
+                      <li>
+                        <a href="#" class="dropdown-item">Shop Fullwidth </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Single Product </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Single Product 2 </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Single Product 3 </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Single Product 4 </a>
+                      </li>
+                      <li><a href="#" class="dropdown-item">Shop Cart </a></li>
+                      <li>
+                        <a href="#" class="dropdown-item">Shop Checkout </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Shop Compare </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Shop Wishlist </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- VENDORS -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle textblue"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      data-bs-display="static"
+                      aria-expanded="false"
+                    >
+                      Vendors
+                    </a>
+
+                    <ul
+                      class="dropdown-menu position-static border-0 text-end textblue"
+                    >
+                      <li>
+                        <a href="#" class="dropdown-item">Vendor Listing</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Vendor Store</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- PAGES -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle textblue"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      data-bs-display="static"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </a>
+
+                    <ul
+                      class="dropdown-menu position-static border-0 text-end textblue"
+                    >
+                      <li><a href="#" class="dropdown-item">About Us </a></li>
+                      <li><a href="#" class="dropdown-item">Contact Us</a></li>
+                      <li><a href="#" class="dropdown-item">Careers</a></li>
+                      <li>
+                        <a href="#" class="dropdown-item"
+                          >Terms &amp; Conditions</a
+                        >
+                      </li>
+                      <li><a href="#" class="dropdown-item">Register</a></li>
+                      <li><a href="#" class="dropdown-item">Login</a></li>
+                      <li><a href="#" class="dropdown-item">Error 404</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- BLOG -->
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link dropdown-toggle textblue"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      data-bs-display="static"
+                      aria-expanded="false"
+                    >
+                      Blog
+                    </a>
+
+                    <ul
+                      class="dropdown-menu position-static border-0 text-end textblue"
+                    >
+                      <li><a href="#" class="dropdown-item">Blog Grid</a></li>
+                      <li><a href="#" class="dropdown-item">Blog Grid 2</a></li>
+                      <li><a href="#" class="dropdown-item">Blog List</a></li>
+                      <li><a href="#" class="dropdown-item">Blog Big </a></li>
+                      <li>
+                        <a href="#" class="dropdown-item"
+                          >Blog Single - Left Sidebar</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"
+                          >Blog Single - Right Sidebar</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"
+                          >Blog Single - No Sidebar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- CONTACT -->
+                  <li class="nav-item">
+                    <a href="#" class="nav-link textblue"> Contact </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+<!-- SHOP COMPARE  -->
+
+<!-- PART ONE  -->
+
+<!-- ===== Breadcrumb ===== -->
+<section class="breadcrumb-section">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item textblue "><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item textblue"><a href="#">Shop</a></li>
+        <li class="breadcrumb-item textblue active" aria-current="page">Compare</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- ===== Compare Table ===== -->
+<section class="compare-section py-5">
+  <div class="container">
+    <!-- table-responsive: to scroll on mobile -->
+    <div class="table-responsive">
+      <table class="table table-bordered compare-table text-center textblue align-middle mb-0">
+        <tbody>
+
+          <!-- products -->
+          <tr>
+            <th scope="row textblue">Products</th>
+            <td>
+              <img src="./img1.png" alt="Dell Optiplex" class="compare-img" />
+              <h6 class="product-title textblue">Dell Optiplex 9020 Small Form Business Desktop Tower PC</h6>
+            </td>
+            <td>
+              <img src="./img2.png" alt="HP 24" class="compare-img" />
+              <h6 class="product-title textblue">HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM</h6>
+            </td>
+            <td>
+              <img src="./img3.png" alt="Logitech Brio" class="compare-img" />
+              <h6 class="product-title textblue">Logitech Brio 4K Webcam, Ultra 4K HD Video Calling</h6>
+            </td>
+          </tr>
+
+          <!-- EVALUATION-->
+          <tr>
+            <th scope="row textblue">Review</th>
+            <td>
+              <span class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <small class="review-count">(65)</small>
+            </td>
+            <td>
+              <span class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <small class="review-count">(65)</small>
+            </td>
+            <td>
+              <span class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <small class="review-count">(65)</small>
+            </td>
+          </tr>
+
+          <tr><th scope="row">Screen Size</th>
+            <td>42&quot;</td>
+            <td>42&quot;</td>
+            <td>42&quot;</td></tr>
+          <tr><th scope="row">Screen Definition</th>
+            <td class="textblue">Full High Definition</td>
+            <td class="textblue">Full High Definition</td>
+            <td class="textblue">Full High Definition</td></tr>
+          <tr><th scope="row">Product Type</th>
+            <td>LED LCDs</td>
+            <td>LED LCDs</td>
+            <td>LED LCDs</td></tr>
+          <tr><th scope="row">Connectivity</th>
+            <td></td><td></td><td></td></tr>
+
+          <!-- PRICES-->
+          <tr>
+            <th scope="row textblue">Price</th>
+            <td class="price textblue">$2786.5</td>
+            <td class="price textblue">$2856.0</td>
+            <td class="price textblue">$2950.0</td>
+          </tr>
+
+          <!-- STOCK STATUS -->
+          <tr>
+            <th scope="row">Stock status</th>
+            <td><span class="stock-badge in-stock">In Stock</span></td>
+            <td><span class="stock-badge out-stock">Out of stock</span></td>
+            <td><span class="stock-badge in-stock">In Stock</span></td>
+          </tr>
+
+          <!-- BUTTONS -->
+          <tr>
+            <th scope="row">Buy now</th>
+            <td><a href="#" class="btn btn-add">Add to Cart</a></td>
+            <td><a href="#" class="btn btn-add-outline">Contact us</a></td>
+            <td><a href="#" class="btn btn-add-outline">Add to Cart</a></td>
+          </tr>
+
+          <!-- DELETE  -->
+          <tr>
+            <th scope="row">Remove</th>
+            <td><a href="#" class="remove-btn"><i class="bi bi-trash3-fill"></i></a></td>
+            <td><a href="#" class="remove-btn"><i class="bi bi-trash3-fill"></i></a></td>
+            <td><a href="#" class="remove-btn"><i class="bi bi-trash3-fill"></i></a></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- The Features Section  -->
+
+        <section class="features-section py-5">
+          <div class="container">
+            <div class="row g-3">
+              <!-- Free Delivery -->
+              <div class="col-12 col-sm-6 col-xl">
+                <div class="feature-card border rounded-1 p-3 h-100">
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-plane feature-icon"></i>
+
+                    <div>
+                      <h6 class="fw-bold mb-1">Free Delivery</h6>
+                      <small>From all Orders over $10</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Support -->
+              <div class="col-12 col-sm-6 col-xl">
+                <div class="feature-card border rounded-1 p-3 h-100">
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-headset feature-icon"></i>
+
+                    <div>
+                      <h6 class="fw-bold mb-1">Support 24/7</h6>
+                      <small>Shop with an Expert</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Gift Voucher -->
+              <div class="col-12 col-sm-6 col-xl">
+                <div class="feature-card border rounded-1 p-3 h-100">
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-gift feature-icon"></i>
+
+                    <div>
+                      <h6 class="fw-bold mb-1">Gift Voucher</h6>
+                      <small>Refer a Friend</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Return & Refund -->
+              <div class="col-12 col-sm-6 col-xl">
+                <div class="feature-card border rounded-1 p-3 h-100">
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-box-open feature-icon"></i>
+
+                    <div>
+                      <h6 class="fw-bold mb-1">Return &amp; Refund</h6>
+                      <small>Free return over $200</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Secure Payment -->
+              <div class="col-12 col-sm-6 col-xl">
+                <div class="feature-card border rounded-1 p-3 h-100">
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-shield-halved feature-icon"></i>
+
+                    <div>
+                      <h6 class="fw-bold mb-1">Secure Payment</h6>
+                      <small>100% Protected</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Subscribe Banner Section  -->
+
+        <section class="subscribe-banner">
+          <div class="container h-100">
+            <div class="row align-items-center h-100 subscribe-row">
+              <!-- Text -->
+              <div class="col-12 col-xl-5 subscribe-content">
+                <h2 class="fw-bold mb-2">
+                  Subscribe &amp; Get
+                  <span class="orange-text">10%</span> Discount
+                </h2>
+
+                <p class="mb-0">
+                  Get E-mail Updates about our latest shop and
+                  <strong>Special Offers.</strong>
+                </p>
+              </div>
+
+              <!-- Email Form  -->
+              <div class="col-12 col-xl-4 subscribe-form-column">
+                <form class="input-group subscribe-form">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email Address"
+                  />
+
+                  <button type="submit" class="btn subscribe-btn">
+                    Sign Up
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Device Image -->
+          <div class="subscribe-devices">
+            <img
+              src="./bg-newsletter.svg"
+              class="subscribe-image"
+              alt="Devices"
+            />
+          </div>
+        </section>
+
+        <!-- Contact Info Section -->
+
+        <section class="info-section">
+          <div class="container">
+            <div class="row g-4">
+              <!-- Contact -->
+              <div class="col-lg-3 col-md-6 contact-info mt-5">
+                <h5 class="fw-bold textnavy mb-4">Contact</h5>
+                <p>
+                  <span class="fw-bold">Address:</span> 502 New Design Str,
+                  Melbourne, San Francisco, CA 94110, United States
+                </p>
+                <p><span class="fw-bold">Phone: </span>(+01) 123-456-789</p>
+                <p>
+                  <span class="fw-bold">Email:</span>contact@ecom-market.com
+                </p>
+                <p>
+                  <span class="fw-bold">Hours: </span>8:00 - 17:00, Mon - Sat
+                </p>
+
+                <div class="social-icons">
+                  <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"> <i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+
+              <!--  Make Money with Us -->
+              <div class="col-lg-2 col-md-6 mt-5">
+                <h5 class="fw-bold textnavy">Make Money with Us</h5>
+                <ul>
+                  <li>Mission &amp; Vision</li>
+                  <li>Our Team</li>
+                  <li>Careers</li>
+                  <li>Press &amp; Media</li>
+                  <li>Advertising</li>
+                  <li>Testimonials</li>
+                </ul>
+              </div>
+
+              <!-- Company -->
+
+              <div class="col-lg-2 col-md-6 mt-5">
+                <h5 class="fw-bold textnavy">Company</h5>
+                <ul>
+                  <li>Our Blog</li>
+                  <li>Plans &amp; Pricing</li>
+                  <li>Knowledge Base</li>
+                  <li>Cookie Policy</li>
+                  <li>Office Center</li>
+                  <li>News &amp; Events</li>
+                </ul>
+              </div>
+
+              <!-- My Account -->
+
+              <div class="col-lg-2 col-md-6 mt-5">
+                <h5 class="textnavy fw-bold">My Account</h5>
+                <ul>
+                  <li>FAQs</li>
+                  <li>Editor Help</li>
+                  <li>Community</li>
+                  <li>Live Chatting</li>
+                  <li>Contact Us</li>
+                  <li>Support Center</li>
+                </ul>
+              </div>
+
+              <!-- App & Payment -->
+
+              <div class="col-lg-3 col-md-6 mt-5">
+                <h5 class="fw-bold textnavy">App &amp; Payment</h5>
+                <p class="mt-4">
+                  Download Our App and Get Extra 15% Discount on Your First
+                  Order...!
+                </p>
+                <img src="./appstore.png" alt="apple store" />
+                <img src="./google-play.png" alt="google play" />
+                <p class="mt-4">Secured Payment Gateways</p>
+                <img src="./payment-method.png" alt="payment methods" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer  -->
+        <footer class="border-top mt-5">
+          <div class="container py-5">
+            <!--  LOGO + Website  -->
+            <div class="row align-items-center mb-5">
+              <div
+                class="col-12 col-md-8 text-center text-md-start mb-4 mb-md-0"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center justify-content-md-start"
+                >
+                  <img
+                    src="./logo.svg"
+                    alt="Ecom Logo"
+                    class="img-fluid me-3"
+                    style="max-width: 280px"
+                  />
+
+                  <h6 class="mb-0">EcomMarket.com</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ecom Partners  -->
+
+            <div class="row mb-5">
+              <div class="col-12">
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                  <a href="#" class="text-decoration-none textblue"
+                    >Ecom Partners</a
+                  >
+                  <a href="#" class="text-decoration-none textblue"
+                    >Ecom Business</a
+                  >
+                  <a href="#" class="text-decoration-none textblue"
+                    >Ecom Factory</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Electronics -->
+
+            <div class="row mb-5">
+              <!-- Title -->
+              <div class="col-12 col-md-3 mb-3 mb-md-0">
+                <h3 class="fw-bold text-dark fs-4">Electronics:</h3>
+              </div>
+
+              <!-- Links -->
+              <div class="col-12 col-md-9">
+                <div class="d-flex flex-wrap">
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Cell Phones
+                  </a>
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Headphones</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Television &amp; Video</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Game Controller</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Apple Watch
+                  </a>
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >HTC
+                  </a>
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Ipad</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Keyboard</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Samsung</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Wireless Speaker</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Samsung Galaxy</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Gaming Mouse</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >eBook Readers</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Service Plans</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Home Audio</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Office Electronics</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Lenovo</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Macbook Pro M1</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >HD Videos Player</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Furniture -->
+
+            <div class="row mb-5">
+              <!-- Title -->
+              <div class="col-12 col-md-3 mb-3 mb-md-0">
+                <h3 class="fw-bold fs-4 text-dark">Furniture:</h3>
+              </div>
+
+              <!-- Links -->
+
+              <div class="col-12 col-md-9">
+                <div class="d-flex flex-wrap">
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Sofa</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Chair</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Dining Table</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Living Room</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Table Lamp</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Night Stand</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Computer Desk</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Bar Table</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Pillow
+                  </a>
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Radio</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Clock</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Bed Room</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Stool</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Television</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Wardrobe</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Livingroom Tables</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Dressers</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Patio Sofa</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Nursery</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Kitchen</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Accent Furniture</a
+                  >
+                  <a href="#" class="footer-link text-decoration-none textblue"
+                    >Replacement Parts</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom  -->
+            <hr class="my-4" />
+
+            <div
+              class="d-flex flex-column flex-md-row justify-content-md-between align-items-center"
+            >
+              <p class="mb-2 mb-md-0 text-center text-md-start">
+                Copyright &copy; 2026 Ecom Market. All rights reserved.
+              </p>
+
+              <div
+                class="d-flex flex-wrap justify-content-center gap-4"
+                style="font-size: 13px"
+              >
+                <a href="#" class="text-decoration-none textblue"
+                  >Conditions of Use
+                </a>
+                <a href="#" class="text-decoration-none textblue"
+                  >Privacy Notice</a
+                >
+                <a href="#" class="text-decoration-none textblue"
+                  >Interest-Based Ads</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- Back To Top Botton -->
+    <a
+      href="#"
+      class="btn btn-button topbotton rounded-circle position-fixed bottom-0 end-0 m-4 shadow"
+    >
+      <i class="bi bi-arrow-up fw-bold"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sidebar Dropdown JS -->
+    <script>
+      document
+        .querySelectorAll('#categorySidebar [data-bs-toggle="dropdown"]')
+        .forEach(function (btn) {
+          new bootstrap.Dropdown(btn, { popperConfig: { strategy: "fixed" } });
+        });
+    </script>
+  </body>
+</html>
